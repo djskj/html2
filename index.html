@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scalwe=1.0,user-scalable=n0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            text-decoration: none;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            padding-left: 40px;
+        }
+
+        .title {
+            position: relative;
+            height: 100px;
+            padding-left: 400px;
+            line-height: 100px;
+            font-size: 20px;
+            background-color: rgb(183, 179, 187);
+        }
+
+        .title img {
+            width: 40px;
+            height: 40px;
+            margin: 30px -50px;
+            position: absolute;
+        }
+
+        .header {
+            width: 700px;
+            height: 40px;
+            background-color: #12bca6;
+            margin: 1px auto;
+            line-height: 40px;
+            font-size: 15px;
+        }
+
+        .header li:hover {
+            background-color: rgb(128, 90, 235);
+        }
+
+        .l1 {
+            padding: 0px 20px;
+        }
+
+        .header a {
+            color: #fff;
+        }
+
+        .body {
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            background-color: rgba(224, 233, 186, 0.815);
+        }
+
+        .body p {
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+        .body img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+
+        .b1 {
+            width: 90px;
+            height: 30px;
+            background-color: rgb(253, 208, 200);
+            margin-left: 35px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+
+        .b1:hover {
+            background-color: yellowgreen;
+        }
+
+        /* 动漫板块 */
+        .b2 {
+            width: 90px;
+            height: 30px;
+            margin-left: 35px;
+            margin-top: 20px;
+            line-height: 30px;
+            background-color: rgb(157, 240, 185);
+        }
+
+        .dm {
+            width: 700px;
+            height: 180px;
+            margin: 2px auto;
+            background-color: turquoise;
+        }
+
+        .dm p {
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+        .dm img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+
+        .b2:hover {
+            background-color: yellowgreen;
+        }
+
+        /* 解析板块 */
+        .jx {
+            width: 700px;
+            height: 150px;
+            margin: 2px auto;
+            background-color: rgb(118, 197, 125);
+        }
+
+        .jx p {
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+        .b3 {
+            width: 90px;
+            height: 30px;
+            margin-left: 35px;
+            margin-top: 30px;
+            line-height: 30px;
+            background-color: rgba(196, 236, 122, 0.459);
+        }
+
+        .jx img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+
+        .b3:hover {
+            background-color: rgb(213, 243, 45);
+        }
+
+        /* 网盘 */
+        .wp {
+            width: 700px;
+            height: 200px;
+            margin: 2px auto;
+            background-color: rgb(83, 63, 196);
+        }
+
+        .wp p {
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+            color: hsl(0, 6%, 83%);
+        }
+
+        .b4 {
+            width: 90px;
+            height: 30px;
+            margin-left: 35px;
+            margin-top: 30px;
+            line-height: 30px;
+            background-color: #cbeeafe7;
+        }
+
+        .wp img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+
+        .b4:hover {
+            background-color: rgb(213, 243, 45);
+        }
+
+        /* 购物 */
+        .gw {
+            width: 700px;
+            height: 200px;
+            margin: 2px auto;
+            background-color: rgb(194, 122, 55);
+        }
+
+        .gw p {
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 20px;
+            color: hsl(0, 6%, 83%);
+        }
+
+        .b5 {
+            width: 90px;
+            height: 30px;
+            margin-left: 35px;
+            margin-top: 30px;
+            line-height: 30px;
+            background-color: #cbeeafe7;
+        }
+
+        .gw img {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+
+        .b5:hover {
+            background-color: rgb(213, 243, 45);
+        }
+
+        .up {
+            /* position: fixed; */
+            width: 60px;
+            height: 60px;
+            margin-left: 1300px;
+            margin-top: -150px;
+        }
+        .up img {
+            width: 60px;
+            height: 60px;
+        }
+          /* 尾部 */
+        .end {
+            position: relative;
+            height: 160px;
+            background-color: rgb(221, 214, 214);
+            margin: auto;
+            margin-top: 90px;
+        
+        }
+
+        .p1 {
+            padding-top: 26px;
+            font-size: 25px;
+            padding-left: 700px;
+            border-bottom: 1px solid;
+        }
+        .p2{
+            padding-left: 704px;
+            font-size: 10px;
+        }
+        .e1{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 400px;
+        }
+        .e2{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 550px;
+        }
+        .e3{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 1000px;
+        }
+        .e4{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 1130px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="title"><img
+            src="https://cdn-icons-png.flaticon.com/128/3953/3953610.png">--导航网--
+    </div>
+    <div class="header">
+        <ul>
+            <li class="l1">
+                <div class="a"><a href="#d1">电影板块</a></div>
+            </li>
+            <li class="l1">
+                <div class="a">
+                    <a href="#dm">动漫板块</a>
+                </div>
+            </li>
+            <li class="l1">
+                <div class="a">
+                    <a href="#jx">解析板块</a>
+                </div>
+            </li>
+            <li class="l1">
+                <div class="a">
+                    <a href="#wp">网盘板块</a>
+                </div>
+            </li>
+            </li>
+            <li class="l1">
+                <div class="a">
+                    <a href="#gw">购物板块</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="body">
+        <p id="d1"><img src="https://cdn-icons-png.flaticon.com/128/4498/4498300.png">电影板块<img
+                src="https://cdn-icons-png.flaticon.com/128/4499/4499224.png"></p>
+        <ul>
+            <li class="b1"><a href="https://www.nfmovies.com/" target="-blank">奈菲影视</a></li>
+            <li class="b1"><a href="https://www.zhenbuka3.com/" target="-blank">真不卡电影</a></li>
+            <li class="b1"><a href="https://tv.ci/" target="-blank">大师兄影视</a></li>
+            <li class="b1"><a href="https://www.o8tv.com/" target="-blank">555影视</a></li>
+            <li class="b1"><a href="https://www.tkys.tv/" target="-blank">天空影视</a></li>
+            <li class="b1"><a href="http://1090ys2.com/" target="-blank">1090影视</a></li>
+            <li class="b1"><a href="https://www.shenma4480.com/" target="-blank">神马影院</a></li>
+            <li class="b1"><a href="https://www.siguyy.com/" target="-blank">思古影视</a></li>
+        </ul>
+    </div>
+    <div class="dm">
+        <p id="dm"><img src="https://cdn-icons-png.flaticon.com/128/2695/2695149.png">动漫板块<img
+                src="https://cdn-icons-png.flaticon.com/128/2695/2695151.png"></p>
+        <ul>
+            <li class="b2"><a href="https://mlsub.net/" target="-blank">梦蓝字幕组</a></li>
+            <li class="b2"><a href="http://www.zzzfun.com/" target="-blank">zzzf动漫</a></li>
+            <li class="b2"><a href="http://www.nicotv.me/" target="-blank">妮可动漫</a></li>
+            <li class="b2">番组计划</a></li>
+            <li class="b2"><a href="https://v.qq.com/cartoon/" target="-blank">腾讯动漫</a></li>
+            <li class="b2"><a href="https://www.iqiyi.com/dongman/" target="-blank">爱奇艺动漫</a></li>
+            <li class="b2"><a href="https://comic.youku.com/" target="-blank">优酷动漫</a></li>
+            <li class="b2"><a href="http://cartoon.pptv.com/" target="-blank">pp动漫</a></li>
+
+        </ul>
+    </div>
+    <div class="jx">
+        <p id="jx"><img src="https://cdn-icons-png.flaticon.com/128/1184/1184996.png">视频解析<img
+                src="https://cdn-icons-png.flaticon.com/128/3953/3953595.png">
+        </p>
+        <ul>
+            <li class="b3"><a href="http://timecn.cn/" target="-blank">全民解析</li>
+            <li class="b3"><a href="https://www.administrator5.com/" target="-blank">无名小站</li>
+            <li class="b3"><a href="https://www.ikukk.com/" target="-blank">爱酷看看</li>
+            <li class="b3"><a href="https://660e.com/" target="-blank">乐乐云</li>
+        </ul>
+    </div>
+    <div class="wp">
+        <p id="wp"><img
+                src="https://cdn-icons-png.flaticon.com/128/4406/4406204.png">网盘搜索<img
+                src="https://cdn-icons-png.flaticon.com/128/4481/4481297.png">
+        </p>
+        <ul>
+            <li class="b4"><a href="https://ujuso.com/#/" target="-blank">优聚搜</a></li>
+            <li class="b4"><a href="https://www.alipanso.com/" target="-blank">阿里盘搜</a></li>
+            <li class="b4"><a href="https://feiyu100.cn/" target="-blank">飞猪盘搜</a></li>
+            <li class="b4"><a href="https://www.xiaobaipan.com/" target="-blank">小白盘</a></li>
+            <li class="b4"><a href="https://www.wuyasou.com/video/" target="-blank">乌鸦搜</a></li>
+            <li class="b4"><a href="http://www.daysou.com/" target="-blank">云搜</a></li>
+        </ul>
+    </div>
+    <div class="gw">
+        <p id="gw"><img
+                src="https://cdn-icons-png.flaticon.com/128/4592/4592910.png">购物<img
+                src="https://cdn-icons-png.flaticon.com/128/4689/4689897.png">
+        </p>
+        <ul>
+            <li class="b5"><a href="http://yh.adzhp.cn/" target="-blank">淘宝优惠卷
+                </a></li>
+            <li class="b5"><a href="http://jd.adzhp.cn/" target="-blank">京东优惠劵</a></li>
+            <li class="b5"><a href="https://www.smzdm.com/" target="-blank">什么值得买</a></li>
+            <li class="b5"><a href="https://pages.tmall.com/wow/a/act/ju/dailygroup/2199/wupr?wh_pid=daily-222239&bid=2"
+                    target="-blank">聚划算</a>
+            </li>
+    </div>
+    <div class="up">
+        <a href="#"><img
+                src="https://cdn-icons-png.flaticon.com/128/4612/4612260.png"></a>
+    </div>
+    <div class="end">
+        <img  class="e2" src="https://cdn-icons-png.flaticon.com/128/4714/4714915.png">
+        <img class="e1" src="https://cdn-icons-png.flaticon.com/128/4688/4688996.png">
+        <img class="e3" src="https://cdn-icons-png.flaticon.com/128/4542/4542824.png">
+        <img class="e4" src="https://cdn-icons-png.flaticon.com/128/4223/4223087.png">
+        <p class="p1">资源导航<br>上网从这里开始</p>
+        <p class="p2">小提示：按下Ctrl+D可收藏本网页，方便下一次使用</p>
+       
+    </div>
+</body>
+
+</html>
